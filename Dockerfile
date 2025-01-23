@@ -1,5 +1,5 @@
 FROM redhat/ubi9
-RUN https://releases.hashicorp.com/vault/1.18.3/vault_1.18.3_linux_amd64.zip
+RUN curl -L -O https://releases.hashicorp.com/vault/1.18.3/vault_1.18.3_linux_amd64.zip
 RUN sudo dnf install unzip
 RUN unzip /tmp/vault.zip
 RUN mv vault /bin
