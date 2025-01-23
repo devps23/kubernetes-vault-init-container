@@ -8,7 +8,7 @@ spec:
       image: public.ecr.aws/u4j6q5s8/kubernetes-init-container:1.0
       env:
         - name: VAULT_ADDR
-          value: https://vault-internal.pdevops72.online:8200
+          value: https://54.167.202.14:8200
         - name: VAULT_TOKEN
           valueFrom:
             secretKeyRef:
